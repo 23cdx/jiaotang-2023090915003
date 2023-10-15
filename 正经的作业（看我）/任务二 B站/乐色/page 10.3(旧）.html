@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电子科技大学</title>
+  <!-- 引入favicon图标 -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- 引入我们初始化样式文件 -->
+  <link rel="stylesheet" href="css/pagecss.css">
+  <!-- 引入我们公共的样式文件 -->
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<header>
+
+  <!-- ----------------------------------上面是背景-------------------------------------- -->
+  <div class="topnav">
+    <div class="le">
+      <div class="pagelogo">
+        <img src="images/pagelogo.png">
+      </div>
+      <div class="nanshou">
+        <ul>
+          <li class="baba">
+            <a herf="#">首页</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="baba">
+            <a herf="#">番剧</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="baba">
+            <a herf="#">游戏中心
+            </a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="baba">
+            <a herf="#">会员购</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+              </ul>
+
+            </div>
+          </li>
+          <li class="baba">
+            <a herf="#">漫画</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="baba">
+            <a herf="#">赛事</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="baba">
+            <a herf="#">国创</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+              </ul>
+
+            </div>
+          </li>
+          <li class="baba">
+            <a herf="#">剧场</a>
+            <div class="downlist">
+              <ul calss="little s">
+                <li>什么也没有</li>
+
+              </ul>
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <script>
+      // 导航栏
+      const navshit = document.querySelectorAll('.baba a')
+      for (let a = 0; a <= navshit.length; a++) {
+
+        navshit[a].addEventListener('mouseenter', function () {
+          document.querySelector(`.downlist`).classList.add('navactive')
+        })
+        navshit[a].addEventListener('mouseleave', function () {
+          document.querySelector(`.downlist`).classList.remove('navactive')
+        })
+      }
+    </script>
+
+    <!---------------------------------  搜索框 -------------------------->
+    <div class="search">
+      <div class=what>
+        <input type="text" placeholder="奋斗40天我要进焦糖">
+        <div class="result invisible">
+          <div class="details">
+            <p>Bilibili热搜</p>
+          </div>
+          <div class="searchlist">
+            <ol>
+              <li>&nbsp;1.华为上架1999元手机壳</li>
+              <li>&nbsp;2.上海成功申办奥运资格赛</li>
+              <li>&nbsp;3.央视曝光拆球星卡盲盒骗局</li>
+              <li>&nbsp;4.柯洁七连胜晋级半决赛</li>
+              <li>&nbsp;5.刘德华说张涵予追了他20年</li>
+              <li>&nbsp;6.五条悟VS宿傩对决解说</li>
+              <li>&nbsp;7.8天长假如何过出80天快乐</li>
+              <li>&nbsp;8.送外卖半路被抓去玩COS</li>
+              <li>&nbsp;9.LOL中韩对决前瞻</li>
+              <li>&nbsp;10.UP花400万做独立游戏</li>
+            </ol>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="searching"><img src="./images/searchlogo.png"></div>
+    </div>
+    <script>
+      const laydown = document.querySelector('.search input')
+      const list = document.querySelector('.result')
+      laydown.addEventListener('focus', function () {
+        document.querySelector('.result').classList.remove('invisible')
+      })
+      laydown.addEventListener('blur', function () {
+        document.querySelector('.result').classList.add('invisible')
+      })
+    </script>
+
+
+
+    <div class="ri">
+      <div class="member"><img src="./images/member.png"></div>
+      <div class="icons">
+        <div class="son"><img src="./images/vip.png">
+        </div>
+        <div class="son"><img src="./images/message.webp"></div>
+        <div class="son"><img src="./images/dongtai.webp"></div>
+        <div class="son"><img src="./images/store.jpg"></div>
+        <div class="son"><img src="./images/times.jpeg"></div>
+        <div class="son"><img src="./images/create.webp"></div>
+      </div>
+      <div class="dicons">
+        <ul>
+          <li>大会员</li>
+          <li>消息</li>
+          <li>动态</li>
+          <li>收藏</li>
+          <li>历史</li>
+          <li>中心</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="topnavx">
+  </div>
+
+  <!------------------------------------- 主页面------------------------ -->
+
+  <body>
+    <div class="video">
+      <div class="introduct">
+        <h1>电子科技大学--“双一流”、“985工程”、“211工程” 梦想之地</h1>
+        <p>播放量225.5万 弹幕 8.5万 2023-06-31 09:00:00 未经作者授权，禁止转载</p>
+      </div>
+      <div class="main">
+        <video src="videos/Video 001电子科技大学.mp4" controls>
+        </video>
+      </div>
+      <div class="manymany">
+
+      </div>
+    </div>
+
+    <!----------------------- 评论区的制作 ------------------------->
+    <div class="remarks">
+      <div class="add">
+        <div class="memberimg1">
+          <img src="./images/member.png">
+        </div>
+        <div class="wrapper">
+          <i class="avatar"></i>
+          <textarea id="tx" placeholder="发一条友善的评论" rows="2" maxlength="200"></textarea>
+          <button>发布</button>
+        </div>
+        <div class="wrapper">
+          <span class="total">0/200字</span>
+        </div>
+      </div>
+      <div class="list">
+        <div class="itemp" style="display: none;">
+          <i class="avatar"></i>
+          <div class="info">
+            <p class="name1">无名</p>
+            <p class="text">666</p>
+            <p class="time">2000-1-1 00:00:00</p>
+          </div>
+        </div>
+      </div>
+      <script>
+        const tx = document.querySelector('#tx')
+        const total = document.querySelector('.total')
+        const itemp = document.querySelector('.itemp')
+        const text = document.querySelector('.text')
+        const btn = document.querySelector('button')
+        tx.addEventListener('focus', function () {
+          total.style.opacity = 1
+        })
+
+        tx.addEventListener('blur', function () {
+          total.style.opacity = 0
+        })
+        tx.addEventListener('input', function () {
+
+          total.innerHTML = `${tx.value.length}/200字`
+        })
+        tx.addEventListener('keyup', function (e) {
+
+          if (e.key === 'Enter') {
+
+            if (tx.value.trim()) {
+              itemp.style.display = 'block'
+              text.innerHTML = tx.value
+            }
+            tx.value = ''
+            total.innerHTML = '0/200字'
+          }
+
+        })
+        btn.addEventListener('click', function () {
+          if (tx.value.trim()) {
+            itemp.style.display = 'block'
+            text.innerHTML = tx.value
+
+          }
+          tx.value = ''
+          total.innerHTML = '0/200字'
+
+
+        })
+
+      </script>
+    </div>
+
+    </div>
+
+
+
+
+
+    <!-------------------------------------------- 右侧导航栏的制作------------------------ -->
+    <div class="up">
+      <div class="memberimg">
+        <img src="./images/member.png">
+      </div>
+      <div class="name">
+        <h2></h2>
+        <h4></h4>
+      </div>
+      <div class="sanlian">
+        <div class="charge"></div>
+        <div class="guanzhu">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="related">
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+
+
+    </div>
+
+
+  </body>
+
+
+
+  <!-- ----------------------------------底页的制作 ------------------------------------>
+  <div class="footer"></div>
+
+</html>

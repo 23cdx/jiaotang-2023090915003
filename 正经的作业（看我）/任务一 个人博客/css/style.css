@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-image: url("../images/background004.webp");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* perspective: 8000px; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+}
+
+
+.lenav {
+  float: left;
+  height: 45px;
+  width: 10%;
+  padding-left: 20px;
+  border-left: 1px rgb(255, 255, 255, 0.5) solid;
+  /* box-shadow: bottom 2px blue; */
+}
+
+.lenavx {
+  float: left;
+  height: 60px;
+  width: 20%;
+  border-radius: 10px;
+  /* border-bottom: 2px blue solid; */
+  /* box-shadow: bottom 2px blue; */
+}
+
+.jump {
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 0.3s;
+  text-align: center;
+  justify-content: center;
+  color: rgb(136, 152, 141);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(245, 249, 3, 0.909);
+}
+
+.active {
+  font-size: 33px;
+  color: white;
+}
+
+.jump:hover {
+  font-size: 33px;
+  color: white;
+}
+
+.rinav {
+  float: right;
+  margin-right: 10%;
+}
+
+#container {
+  float: left;
+  padding-top: 15%;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 900s linear forwards infinite;
+}
+
+section div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/001.webp");
+  background-size: cover;
+}
+
+section:nth-child(2) {
+  animation: rotate2 900s linear forwards infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(-360deg);
+  }
+}
+
+h1 {
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  color: aliceblue;
+  transition: all 0.5s;
+  font-size: 75px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.video {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+}
+
+h1:hover {
+  color: aqua;
+}

@@ -1,0 +1,41 @@
+/* 顶部导航栏 */
+
+.guideline {
+    height: 41px;
+    background-color: snow;
+    border-bottom: 1px solid rgb(81, 48, 199);
+    border-top: 3px solid rgb(81, 48, 199);
+    line-height: 41px;
+
+    line-height: 70 px;
+}
+
+.guideline a {
+    display: inline-block;
+    height: 41px;
+
+    color: blueviolet;
+    text-decoration: none;
+    padding: 0 40px;
+
+
+}
+
+.guideline a:hover {
+    background-color: #eee;
+    color: darkgreen;
+    font-size: 20px;
+}
+
+/* 首页侧边栏 */
+
+.list {
+    padding-left: 20px;
+    background-color: lightskyblue;
+}
+
+.list a:hover {
+    background-color: #eee;
+    color: darkgreen;
+    font-size: 20px;
+}

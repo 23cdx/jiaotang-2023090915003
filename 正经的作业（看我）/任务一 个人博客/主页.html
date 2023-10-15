@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>丁丁的个人博客</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+
+<body>
+  <header>
+    <div class="lenavx"><a href="./主页.html" class="logo">DingDing's Blog</a></div>
+    <div class="lenav"><a href="./主页.html" class="jump active">首页</a></div>
+    <div class="lenav"><a href="./照骗.html" class="jump">照片</a></div>
+    <!-- <div class="lenav"><a href="./日志.html" class="jump">日志</a></div> -->
+    <div class="lenav"><a href="./随笔.html" class="jump">随笔</a></div>
+    <div class="lenav"><a href="../任务二 B站/Bzhan.html" class="jump">B站</a></div>l
+
+
+    <!-- <div class="rinav">
+      <input type="text">
+    </div> -->
+  </header>
+
+
+
+
+  <div id="container">
+    <section>
+    </section>
+    <section>
+    </section>
+  </div>
+
+  <h1>焦糖</h1>
+  <div class="video">
+    <video src="./videos/ninelie.mp3" autoplay controls></video>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const section = document.querySelectorAll('section')
+      const edge = 72
+      const swiper = (el, start, end) => {
+        let index = start
+
+        for (let i = 0; i < edge; i++) {
+          let div = document.createElement('div')
+          div.style.transform = `rotateX(${(360 / edge) * i}deg) translateZ(2290px)`
+          div.style.background = `url(./images/00${[index]}.webp) no-repeat`
+          div.style.backgroundSize = `cover`
+          el.appendChild(div)
+
+          index++
+
+          if (index === end) {
+            index = start
+          }
+        }
+      }
+      let start = 1
+      let end = 4
+      for (let j = 0; j < section.length; j++) {
+        swiper(section[j], start, end)
+        start = start + 3
+        end = end + 3
+      }
+    })
+
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bilibili \\(>_<) // 干杯~~~ </title>
+
+            <meta name="description" content="专业前端一个月" />
+
+            <meta name="keywords" content="视频，游戏，直播" />
+
+
+            <link rel="shortcut icon" href="favicon.ico" />
+
+            <link rel="stylesheet" href="css/style.css">
+
+            <link rel="stylesheet" href="css/common.css">
+</head>
+<!-- 上方导航栏 -->
+
+<header>
+    <div class="nav">
+        <div class="water">
+            <video src="./background/water.webm" autoplay="autoplay" loop></video>
+        </div>
+        <div class="glowing">
+            <video src="./background/glowing.webm" autoplay="autoplay" loop></video>
+        </div>
+        <div class="bigbck">
+            <img src="./background/bigbackground.png@1c.webp">
+        </div>
+        <div class="tree">
+            <img src="./background/tree.png@1c.webp">
+        </div>
+        <div class="bck6">
+            <img src="./background/bck6.png@1c .webp">
+        </div>
+        <div class="bck2">
+            <img src="./background/bck2.png@1c.webp">
+        </div>
+        <div class="bck5">
+            <img src="./background/bck5.png@1c.webp">
+        </div>
+        <div class="bck4">
+            <img src="./background/bck4.png@1c.webp">
+        </div>
+        <div class="bck3">
+            <img src="./background/bck3.png@1c.webp">
+        </div>
+        <div class="bckleft">
+            <img src="./background/bckleft.png@1c.webp">
+        </div>
+
+    </div>
+    <!-- ----------------------------------上面是背景-------------------------------------- -->
+    <div class="topnav">
+        <div class="le">
+            <div class="tv">
+                <img src="images/newlogo.png">
+            </div>
+            <div class="nanshou">
+                <ul>
+                    <li class="baba">
+                        <a herf="#">首页</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="baba">
+                        <a herf="#">番剧</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="baba">
+                        <a herf="#">游戏中心
+                        </a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="baba">
+                        <a herf="#">会员购</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="baba">
+                        <a herf="#">漫画</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="baba">
+                        <a herf="#">赛事</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="baba">
+                        <a herf="#">国创</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="baba">
+                        <a herf="#">剧场</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="baba">
+                        <a herf="#">大会员</a>
+                        <div class="downlist">
+                            <ul calss="little s">
+                                <li>什么也没有</li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            // 导航栏
+            const navshit = document.querySelectorAll('.baba a')
+            for (let a = 0; a <= navshit.length; a++) {
+
+                navshit[a].addEventListener('mouseenter', function () {
+                    document.querySelector(`.downlist`).classList.add('navactive')
+                })
+                navshit[a].addEventListener('mouseleave', function () {
+                    document.querySelector(`.downlist`).classList.remove('navactive')
+                })
+            }
+        </script>
+
+        <!---------------------------------  搜索框 -------------------------->
+        <div class="search">
+            <div class=what>
+                <input type="text" placeholder="奋斗40天我要进焦糖">
+                <div class="result invisible">
+                    <div class="details">
+                        <p>Bilibili热搜</p>
+                    </div>
+                    <div class="searchlist">
+                        <ol>
+                            <li>&nbsp;1.华为上架1999元手机壳</li>
+                            <li>&nbsp;2.上海成功申办奥运资格赛</li>
+                            <li>&nbsp;3.央视曝光拆球星卡盲盒骗局</li>
+                            <li>&nbsp;4.柯洁七连胜晋级半决赛</li>
+                            <li>&nbsp;5.刘德华说张涵予追了他20年</li>
+                            <li>&nbsp;6.五条悟VS宿傩对决解说</li>
+                            <li>&nbsp;7.8天长假如何过出80天快乐</li>
+                            <li>&nbsp;8.送外卖半路被抓去玩COS</li>
+                            <li>&nbsp;9.LOL中韩对决前瞻</li>
+                            <li>&nbsp;10.UP花400万做独立游戏</li>
+                        </ol>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="searching"><img src="./images/searchlogo.png"></div>
+        </div>
+        <script>
+            const laydown = document.querySelector('.search input')
+            const list = document.querySelector('.result')
+            laydown.addEventListener('focus', function () {
+                document.querySelector('.result').classList.remove('invisible')
+            })
+            laydown.addEventListener('blur', function () {
+                document.querySelector('.result').classList.add('invisible')
+            })
+        </script>
+
+
+
+        <div class="ri">
+            <div class="member"><img src="./images/member.png"></div>
+            <div class="icons">
+                <div class="son"><img src="./images/vip.png">
+                </div>
+                <div class="son"><img src="./images/message.webp"></div>
+                <div class="son"><img src="./images/dongtai.webp"></div>
+                <div class="son"><img src="./images/store.jpg"></div>
+                <div class="son"><img src="./images/times.jpeg"></div>
+                <div class="son"><img src="./images/create.webp"></div>
+            </div>
+            <div class="dicons">
+                <ul>
+                    <li>大会员</li>
+                    <li>消息</li>
+                    <li>动态</li>
+                    <li>收藏</li>
+                    <li>历史</li>
+                    <li>中心</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="topnavx">
+    </div>
+
+    <script>
+        const extranav = document.querySelector('.topnavx')
+        window.addEventListener('scroll', function () {
+            const p = document.documentElement.scrollTop
+            extranav.style.opacity = p >= 0.001 ? 1 : 0
+        })
+    </script>
+
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+    </div>
+
+    <div class="denav">
+        <div class="dd">
+            <img src="./images/steal.png">
+        </div>
+
+
+
+        <div class="subguide">
+            <ul>
+                <li><a href="#">国创</a></li>
+                <li><a href="#">番剧</a></li>
+                <li><a href="#">综艺</a></li>
+                <li><a href="#">动画</a></li>
+                <li><a href="#">鬼畜</a></li>
+                <li><a href="#">舞蹈</a></li>
+                <li><a href="#">娱乐</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#" class="sp">专栏</a></li>
+                <li><a href="#" class="sp">活动</a></li>
+                <li><a href="#" class="sp">社区中心</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">电视剧</a></li>
+                <li><a href="#">纪录片</a></li>
+                <li><a href="#">游戏</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">影视</a></li>
+                <li><a href="#">知识</a></li>
+                <li><a href="#">资讯</a></li>
+                <li><a href="#">更多</a></li>
+                <li><a href="#" class="sp">直播</a></li>
+                <li><a href="#" class="sp">课堂</a></li>
+                <li><a href="#" class="sp">新歌热榜</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</header>
+<!----------------------------- 电梯导航栏 ------------------->
+<div class="elevator" id="backtop">
+    返回顶部
+</div>
+<script>
+    const elevator = document.querySelector('.elevator')
+    window.addEventListener('scroll', function () {
+        const n = document.documentElement.scrollTop
+        elevator.style.opacity = n >= 500 ? 1 : 0
+    })
+    const back = document.querySelector('#backtop')
+    back.addEventListener('click', function () {
+        document.documentElement.scrollTop = 0
+    })
+</script>
+
+
+<body>
+
+
+    <div class="banner">
+        <!--------------------  主图热点图 ------------------------------->
+        <div class="hot">
+            <div class="hotpage">
+                <img src="images/lun001.png" alt="" />
+            </div>
+
+            <div class="footer">
+                <p>五条悟</p>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <div class="toggle">
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+            </div>
+
+            <script>
+
+                const hotdata = [
+                    { url: './images/lun001.png', title: '五条悟', color: 'rgb(102, 75, 59)' },
+                    { url: './images/lun002.png', title: '镇魂街', color: 'rgb(75, 48, 38)' },
+                    { url: './images/lun003.png', title: '社死现场', color: 'rgb(81, 70, 58)' },
+                    { url: './images/lun004.png', title: '暑假该怎么过', color: 'rgb(207, 158, 64)' },
+                    { url: './images/lun005.png', title: '文豪野犬', color: 'rgb(64, 32, 38)' },
+                    { url: './images/lun006.png', title: '肌肉肌肉！！', color: 'rgb(132, 139, 147)' },
+                ]
+                let i = 0
+
+                const img = document.querySelector('.hotpage img')
+                const p = document.querySelector('.hot p')
+                const footer = document.querySelector('.footer')
+
+                function common() {
+                    img.src = hotdata[i].url
+                    p.innerHTML = hotdata[i].title
+                    footer.style.backgroundColor = hotdata[i].color
+                    document.querySelector('.dots .active').classList.remove('active')
+                    document.querySelector(`.dots li:nth-child(${i + 1})`).classList.add('active')
+                }
+                let timing = setInterval(function () {
+                    next.click()
+                }, 2000)
+
+                const prev = document.querySelector('.prev')
+                prev.addEventListener('click', function () {
+                    i--
+                    i = i < 0 ? hotdata.length - 1 : i
+
+                    common()
+                })
+                const next = document.querySelector('.next')
+                next.addEventListener('click', function () {
+                    i++
+                    i = i >= hotdata.length ? 0 : i
+                    common()
+                })
+
+                const hot = document.querySelector('.hot')
+                hot.addEventListener('mouseenter', function () {
+                    clearInterval(timing)
+                })
+                hot.addEventListener('mouseleave', function () {
+                    clearInterval(timing)
+                    timing = setInterval(function () {
+                        next.click()
+                    }, 2000)
+                })
+
+            </script>
+        </div>
+
+
+
+        <div class="ribox box jump">
+            <div class="video">
+                <video src="./videos/Video 001电子科技大学.mp4" class="clip"></video>
+                <p class="nums">播放:10.4万 弹幕666</p>
+                <p class="times">01:47</p>
+            </div>
+            <p class="btitle">电子科技大学</p>
+            <p class="bup">电子科技大学 9-26</p>
+        </div>
+
+        <div class="ribox box">
+            <div class="video">
+                <video src="./videos/Video 002 Mate60.mp4" class="clip"></video>
+                <p class="nums">播放:6.7万 弹幕342</p>
+                <p class="times">10:06</p>
+            </div>
+            <p class="btitle">华为手机测评</p>
+            <p class="bup">小李 9-29</p>
+        </div>
+        <div class="ribox box">
+            <div class="video">
+                <video src="./videos/Video 003 崩铁玄黄.mp4" class="clip"></video>
+                <p class="nums">播放:57.9万 弹幕6313</p>
+                <p class="times">04:23</p>
+            </div>
+            <p class="btitle">崩铁宣传片</p>
+            <p class="bup">崩铁官方 9-28</p>
+        </div>
+
+        <div class="ribox box">
+            <div class="video">
+                <video src="./videos/Video 004 VScode爽.mp4" class="clip"></video>
+                <p class="nums">播放：40万 弹幕1212</p>
+                <p class="times">02:32</p>
+            </div>
+            <p class="btitle">怎么敲代码vscode</p>
+            <p class="bup">程序猿 9-25</p>
+        </div>
+        <div class="ribox box">
+            <div class="video">
+                <video src="./videos/Video 005 死刑前睡不着.mp4" class="clip"></video>
+                <p class="nums">播放：39.1万 弹幕123</p>
+                <p class="times">12:06</p>
+            </div>
+            <p class="btitle">死刑前睡不着</p>
+            <p class="bup">怪异君 9-28</p>
+        </div>
+
+        <div class="ribox box">
+            <div class="video">
+                <video src="./videos/Video 006 狂徒张三.mp4" class="clip"></video>
+                <p class="nums">播放：123.9万 弹幕3199</p>
+                <p class="times">09:45</p>
+            </div>
+            <p class="btitle">狂徒张三</p>
+            <p class="bup">罗翔说刑法 9-29</p>
+        </div>
+    </div>
+
+
+    <script>
+        const clip = document.querySelectorAll('.clip')
+        const nums = document.querySelectorAll('.nums')
+        const times = document.querySelectorAll('.times')
+
+        for (let i = 0; i < clip.length; i++) {
+            clip[i].addEventListener('mouseenter', function (e) {
+                clip[i].play()
+                nums[i].style.opacity = 0
+                times[i].style.opacity = 0
+            })
+
+
+            clip[i].addEventListener('mouseout', function (e) {
+                clip[i].pause()
+                nums[i].style.opacity = 1
+                times[i].style.opacity = 1
+            })
+        }
+        const jump = document.querySelector('.jump')
+        jump.addEventListener('click', function () {
+            location.href = ('./page.html')
+        })
+    </script>
+
+    <div class="more">
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="downbox box">
+            <div class="video">
+                <video src="#"></video>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

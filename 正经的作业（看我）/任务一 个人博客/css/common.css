@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-image: url("../images/background004.webp");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* perspective: 8000px; */
+}
+
+
+header {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+}
+
+.lenav {
+  float: left;
+  height: 45px;
+  width: 10%;
+  padding-left: 20px;
+  border-left: 1px rgb(255, 255, 255, 0.5) solid;
+  /* box-shadow: bottom 2px blue; */
+}
+
+.lenavx {
+  float: left;
+  height: 60px;
+  width: 20%;
+  border-radius: 10px;
+  /* border-bottom: 2px blue solid; */
+  /* box-shadow: bottom 2px blue; */
+}
+
+
+.jump {
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 0.3s;
+  text-align: center;
+  justify-content: center;
+  color: rgb(136, 152, 141);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(245, 249, 3, 0.909);
+}
+
+.jump:hover {
+  font-size: 33px;
+  color: white;
+}

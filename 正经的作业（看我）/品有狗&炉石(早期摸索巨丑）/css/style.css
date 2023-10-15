@@ -1,0 +1,203 @@
+.shortcut {
+  clear: both;
+  height: 31px;
+  background-color: rgb(241, 241, 241);
+}
+
+.hello {
+  float: left;
+  display: block;
+  margin-left: 115px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.jump {
+  float: left;
+  text-decoration: none;
+  color: red;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.guide ul li {
+  float: right;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.guide ul li:nth-child(even) {
+
+  height: 12px;
+  width: 1px;
+
+  margin-top: 8px;
+  background-color: #666;
+}
+
+.guide {
+  float: right;
+  margin-right: 115px;
+}
+
+
+
+
+header {
+  /* border-bottom: grey 3px solid; */
+  height: 111px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.logo {
+  float: left;
+  margin-top: 30px;
+  margin-left: 115px;
+  width: 201px;
+  height: 67px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  float: left;
+  margin-top: 30px;
+  margin-left: 163px;
+  margin-right: 100px;
+  width: 552px;
+  height: 35px;
+  border-radius: 5px;
+  border: red 3px solid;
+}
+
+.searching {
+  float: left;
+  display: block;
+  width: 480px;
+  height: 100%;
+}
+
+.searchlogo {
+  float: right;
+  background-color: red;
+  height: 100%;
+  width: 65px;
+  padding-left: 13px;
+  padding-top: 3px;
+  color: white;
+}
+
+.sklogo {
+  float: right;
+  width: 90px;
+  height: 90px;
+  margin-right: 200px;
+  margin-top: 10px;
+}
+
+.sklogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.underline {
+  float: left;
+  margin-left: 150px;
+  font: black;
+  text-decoration: none;
+}
+
+.underline a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+
+
+.skip {
+  height: 47px;
+  border-bottom: rgb(177, 25, 26) solid 3px;
+}
+
+.fw {
+  float: left;
+  display: block;
+  background-color: rgb(177, 25, 26);
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  width: 213px;
+  line-height: 50px;
+  margin-left: 115px;
+  height: 47px;
+}
+
+.up {
+  float: left;
+  width: 1010px;
+  height: 40px;
+  background-color: white;
+  /* border-bottom: grey solid 3px; */
+
+}
+
+.up ul li {
+  float: left;
+  margin-right: 50px;
+  font-size: 20px;
+
+}
+
+/* 版心 */
+
+.banner {
+  width: 1231px;
+  margin-left: 115px;
+}
+
+.nav {
+  float: left;
+  width: 213px;
+  height: 479px;
+  padding-top: 15px;
+  background-color: red;
+  text-decoration: none;
+  text-align: left;
+}
+
+.nav ul li {
+  margin-left: -17px;
+  margin-top: 8px;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+
+.backpage {
+  float: left;
+  padding: 10px;
+  padding-left: 5px;
+  width: 750px;
+  height: 488px;
+}
+
+.backpage img {
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  width: 100px;
+  height: 488px;
+  float: left;
+  margin-left: 100px;
+  background-color: black;
+}

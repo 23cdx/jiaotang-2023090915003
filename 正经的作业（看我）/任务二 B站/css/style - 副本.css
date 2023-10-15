@@ -1,0 +1,699 @@
+/* 上部导航栏 */
+.nav {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 0;
+
+}
+
+/* --------------------------------------------背景图 ------------------------------------------------*/
+.water {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.water video {
+    width: 100%;
+    height: 100%;
+}
+
+.glowing {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.glowing video {
+    width: 100%;
+    height: 100%;
+
+}
+
+.bigbck {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 179px;
+    z-index: 0;
+}
+
+.bigbck img {
+    width: 100%;
+    height: 100%;
+}
+
+.tree {
+    position: absolute;
+    top: 27px;
+    left: 689px;
+    width: 190px;
+    height: 121px;
+    z-index: 0;
+}
+
+.tree img {
+    width: 100%;
+    height: 100%;
+}
+
+.bck5 {
+    position: absolute;
+    top: 49px;
+    left: 138px;
+    width: 355px;
+    height: 118px;
+    z-index: 2;
+}
+
+.bck5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.bck4 {
+    position: absolute;
+    top: 83px;
+    left: 896px;
+    width: 112px;
+    height: 45px;
+    z-index: 2;
+}
+
+.bck4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.bck6 {
+    position: absolute;
+    top: 70px;
+    left: 515px;
+    width: 206px;
+    height: 80px;
+    z-index: 2;
+}
+
+.bck6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.bck3 {
+    position: absolute;
+    top: 5px;
+    left: 1019px;
+    width: 420px;
+    height: 150px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bck3 img {
+    height: 100%;
+}
+
+.bck2 {
+    position: absolute;
+    top: -6px;
+    left: 1167px;
+    width: 282px;
+    height: 121px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bck2 img {
+    height: 100%;
+}
+
+.bckleft {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 483px;
+    height: 150px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bckleft img {
+    height: 100%;
+}
+
+
+
+/* --------------------------------------------分界线--------------------------------------------- */
+/* .topnav {
+    position: fixed;
+    z-index: 0;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 5px 0 3px grey;
+
+} */
+.topnav {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+.topnavx {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(2, 49, 68);
+    opacity: 0;
+}
+
+/* 左侧 */
+.tv {
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 5px;
+}
+
+.tv img {
+    width: 100%;
+    height: 100%;
+}
+
+.nanshou {
+    float: left;
+}
+
+.nanshou ul li {
+    float: left;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 17px;
+}
+
+.topnav a {
+    font-size: 15px;
+    color: white;
+    transition: all 1s ease;
+}
+
+.topnav a:hover {
+    /* display: block;
+    animation-name: cool 0.5s ease alternate; */
+    line-height: 5px;
+}
+
+.baba {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.downlist {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: block;
+    width: 480px;
+    height: 282px;
+    background-color: white;
+    box-shadow: 5px 0 3px grey;
+    overflow: auto;
+    opacity: 0;
+    list-style: none;
+    border-radius: 10px;
+
+}
+
+.navactive {
+    opacity: 1;
+}
+
+.downlist ul li {
+    text-align: center;
+    font-size: 20px;
+    clear: float;
+}
+
+/* ----------------------------------------------------搜索框 ----------------------------------------------------------*/
+.search {
+    float: left;
+    width: 400px;
+    height: 40px;
+    margin-top: 14px;
+    border-radius: 5px;
+    border: 1px solid #3a3e99;
+    background-color: rgb(252, 252, 252);
+    z-index: 3;
+}
+
+
+
+.what {
+    position: relative;
+}
+
+.search input {
+    width: 340px;
+    height: 30px;
+    float: left;
+    background-color: rgb(220, 226, 229);
+    margin-top: 4px;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.search input:focus {
+    outline: none;
+    background-color: rgb(227, 229, 231);
+}
+
+
+
+.searching {
+    width: 35px;
+    height: 34px;
+    float: right;
+    background-color: #fff;
+    margin-top: 2px;
+    margin-right: 7px;
+    border: white 1px solid;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.searching img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.searching img:hover {
+    opacity: 1;
+}
+
+/* 注意!!!!!!暂时隐藏------------------------------------------------------*/
+.result {
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    z-index: 3 !important;
+    overflow: visible !important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.invisible {
+    display: none;
+}
+
+.details {
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+
+.searchlist ol li {
+    display: block;
+    height: 39px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.searchlist ol li:hover {
+    background-color: rgb(227, 229, 231);
+}
+
+.ri {
+    margin-top: 19px;
+    float: left;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    width: 80px;
+    height: 70px;
+    float: left;
+    margin: -5px 0 50px 0;
+    z-index: 0.1;
+}
+
+/* 右侧 */
+.member {
+    float: left;
+    width: 47px;
+    height: 47px;
+    border-radius: 23.5px;
+    border: 1px solid white;
+    margin-top: -5px;
+    margin-left: 20px;
+    overflow: hidden;
+    background-color: rgb(2, 49, 68);
+}
+
+.member img {
+    width: 100%;
+    height: 100%;
+}
+
+.icons {
+    box-sizing: content-box;
+    float: left;
+    margin-top: -5px;
+    background-color: rgb(2, 49, 68);
+}
+
+
+
+
+.son {
+    float: left;
+    width: 27px;
+    height: 27px;
+
+    border-radius: 13.5px;
+    margin-left: 40px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.son img {
+    width: 100%;
+    height: 100%;
+}
+
+.dicons ul li {
+    float: left;
+    list-style: none;
+    margin-left: 35px;
+    margin-right: 6px;
+    font-size: 10px;
+    color: #fff;
+}
+
+/* 副导航栏 */
+.denav {
+    position: relative;
+    width: 1398px;
+    background-color: white;
+    height: 110px;
+    margin: 0 auto;
+    z-index: 0;
+
+}
+
+.dd {
+    position: absolute;
+    top: 10px;
+    left: 53px;
+    float: left;
+    width: 136px;
+    height: 80px;
+}
+
+.dd img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .subguide {
+    position: absolute;
+    top: 152px;
+    left: 174px;
+    width: 1211px;
+    height: 73px;
+    background-color: bisque;
+} */
+
+.subguide {
+    position: absolute;
+    top: 15px;
+    left: 250px;
+    width: 1100px;
+    height: 73px;
+    background-color: white;
+    z-index: 2;
+}
+
+.subguide ul li {
+    list-style: none;
+    float: left;
+    width: 77px;
+    height: 25px;
+    background-color: #f6f7f8;
+    border-radius: 5px;
+    margin-top: 13px;
+    margin-right: 11px;
+    text-align: center;
+}
+
+.sp {
+    font-size: 15px !important;
+    color: #0b0202 !important;
+}
+
+/* .subguide ul li :nth-child(12) {
+    border-left: 5px solid grey;
+} */
+
+.subguide ul li a {
+    font-size: 13px;
+    color: #61666d;
+
+}
+
+.subguide ul li:hover {
+    background-color: rgb(226, 228, 230);
+}
+
+
+/* 主板 */
+.elevator {
+    position: fixed;
+    top: 430px;
+    left: 1394px;
+    width: 35px;
+    height: 40px;
+    background-color: rgb(182, 184, 235);
+    border-radius: 5px;
+    box-shadow: 3px black bottom;
+    opacity: 0;
+    z-index: 666;
+}
+
+.banner {
+
+    margin: o auto;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.hot {
+    width: 520px;
+    height: 383px;
+    float: left;
+    background-color: rgb(64, 32, 38);
+
+    margin-left: 53px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 3px lightblue;
+}
+
+.hotpage {
+    height: 311px;
+}
+
+.hotpage img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hot ul li {
+    list-style: none;
+
+}
+
+.hot p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.dots li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.dots li.active {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+.footer {
+    height: 72px;
+    background-color: rgb(100, 67, 68);
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    display: flex;
+}
+
+.toggle button {
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 更多视频 */
+.ribox {
+    float: left;
+    width: 252px;
+    height: 142px;
+    margin-left: 16px;
+    margin-bottom: 98px;
+
+}
+
+.more {
+    margin-left: 37px;
+    width: 100%;
+}
+
+.downbox {
+    float: left;
+    width: 252px;
+    height: 142px;
+    margin-left: 16px;
+    margin-bottom: 98px;
+
+}
+
+.box {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 5px 5px 3px lightblue;
+    filter: grayscale(0.5);
+    border: 2px white solid;
+}
+
+.box:hover {
+    filter: grayscale(0);
+}
+
+.box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video {
+    position: relative;
+}
+
+.box .nums {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    width: 80px;
+    height: 20px;
+    display: block;
+    font-size: 8px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.box .times {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    width: 80px;
+    height: 20px;
+    display: block;
+    font-size: 8px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+/* .videoactive {
+    autoplay: autoplay;
+} */
